@@ -32,6 +32,7 @@ bq_spec_decl(int, sp2);
 
 char md[16];
 
+#pragma GCC diagnostic ignored "-Wuninitialized"
 void job(void *) {
 	int k;
 	char local_md[16];
@@ -40,6 +41,7 @@ void job(void *) {
 		md[k] ^= local_md[k];
 	}
 }
+#pragma GCC diagnostic pop
 
 bq_cont_count_t cont_count(3);
 

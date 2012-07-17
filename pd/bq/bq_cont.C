@@ -65,7 +65,7 @@ unsigned int bq_spec_reserve() throw() {
 
 #if \
 	__gcc_version_current >= __gcc_version(3, 3, 0) &&  \
-	__gcc_version_current < __gcc_version(4, 7, 0) && \
+	__gcc_version_current < __gcc_version(4, 8, 0) && \
 	!defined(__arm__)
 
 struct __cxa_eh_globals {
