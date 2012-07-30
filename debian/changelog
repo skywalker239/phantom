@@ -1,3 +1,9 @@
+phantom (0.14.0~pre40sky1) precise; urgency=low
+
+  * bq wrappers for sendto(2) and recvfrom(2).
+
+ -- Alexander Kharitonov <skywalker@yandex-team.ru>  Mon, 30 Jul 2012 19:37:29 +0400
+
 phantom (0.14.0~pre40) hardy; urgency=low
 
   * svn log https://svn.yandex.ru/phantom/trunk@207
