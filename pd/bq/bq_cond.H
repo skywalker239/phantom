@@ -38,6 +38,7 @@ public:
 	void unlock();
 
 	void send();
+	void send_all();
 	bq_err_t wait(interval_t *timeout);
 
 	friend class wait_item_t;

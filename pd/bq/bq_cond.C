@@ -65,4 +65,14 @@ void bq_cond_t::send() {
 		impl = list->set_ready();
 }
 
+void bq_cond_t::send_all() {
+	for(wait_item_t* item = list; item; item = item->next) {
+		bq_thr_t::impl_t* item_impl = item->set_ready();
+		if(item_impl) {
+			item_impl->poke();
+		}
+	}
+	impl = NULL;
+}
+
 } // namespace pd
